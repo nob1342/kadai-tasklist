@@ -44,14 +44,4 @@ public class IndexServlet extends HttpServlet {
         rd.forward(request, response);
     }
 
-    //修正前参考用
-//    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//        EntityManager em = DBUtil.createEntityManager();
-
-//        List<Task> tasks = em.createNamedQuery("getAllTasks", Task.class).getResultList();
-//        response.getWriter().append(Integer.valueOf(tasks.size()).toString());
-//
-//        em.close();
-//    }
-
 }
